@@ -1,0 +1,88 @@
+EXERCISE 1
+
+class dog: 
+    def __init__(self, breed, age, name):
+        self.breed=breed
+        self.age=age
+        self.name=name
+
+    def woof(self):
+        print("WOOF WOOF!!")
+
+max_one = dog("PUG", 5, "Maya")
+max_two = dog("Jack Russel", 3, "Maxipweeel")
+
+print(f"{max_one} came from a breed of {max_one.breed} and is {max_one.age} years old")
+print(f"{max_two} came from a breed of {max_two.breed} and is {max_two.age} years old")
+
+if max_one.age > max_two.age:
+    olderDog  = max_one
+
+else:
+    olderDog = max_two
+    print(f"{olderDog_name} is the older dog so, ") ; olderDog.woof()
+
+
+EXERCISE 2
+
+class std:
+    def __init__(self, name, Score1, Score2, Score3):
+        self.name = name 
+        self.Score1 = Score1
+        self.Score2 = Score2
+        self.Score3 = Score3
+
+    def gradeCalculate(self):
+        return (self.Score1 + self.Score2 + self.Score3) / 3
+    
+    def show(self):
+        print(f"{self.name}'s average score is {self.gradeCalculate():.2f}")
+
+stdOne = std("Claude, 80, 83, 90")
+stdOne.show()
+
+print("Please enter data for the second student: ")
+
+name = input("Name: ")
+Score1 = int(input("Mark 1: "))
+Score2 = int(input("Mark 2: "))
+Score3 = int(input("Mark 3: "))
+
+secstd = std(name, Score1, Score2, Score3)
+secstd.show()
+
+EXERCISE 3
+
+class mny:
+    def _init_(self, name, ID, age, salary):
+        self.name = name
+        self.ID = ID 
+        self.age = age
+        self.salary = salary
+
+    def data(self):
+        self.name = input("Please Enter Your Name: ")
+        self.ID=input("Enter your ID: ")
+        self.age=int(input("Enter your age: "))
+        self.salary=int(input("Lastly, enter your salaray: "))
+
+    def data2(self):
+        print(f"NAME: {self.name}")
+        print(f"ID: {self.ID}")
+        print(f"NAME: {self.age}")
+        print(f"NAME: {self.salary}")
+
+mny_list = []
+
+for i in range(5):
+    mny1 = mny("",  0, "", 0)
+    mny1.data()
+    mny_list.append(mny1)
+
+for mny1 in mny_list:
+    mny1.data1()
+    print()
+
+
+
+
