@@ -1,0 +1,25 @@
+EXERCISE 1
+
+def name (firstname, lastname):
+    firstname= firstname
+    lastname=lastname
+    print(f'Full Name: {firstname.title()} {lastname.title()}')
+
+firstname=str(input("Input first name: "))
+lastname = str(input("Last Name: "))
+
+name(firstname,lastname)
+
+EXERCISE 2
+
+def name (num1, num2):
+    num1=num1
+    num2=num2
+    result=num1+num2
+    print(f'Result: {result}')
+
+num1 =int(input("Enter first number: "))
+num2 = int(input(" Enter second number: "))
+
+
+
