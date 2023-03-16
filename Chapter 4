@@ -1,0 +1,55 @@
+EXERCISE 1
+
+i = open ("info.txt","w")
+name = str(input("Name:  "))
+age = int(input("Age: "))
+HomeTown=str(input("Address: "))
+
+i.write(f"Name: {name} \n")
+i.write(f"Age: {age}\n")
+i.write(f"Homtwon {HomeTown}\n")
+i.close()
+
+i = open('info.txt', "r+")
+print ("Enter input: ")
+Line = i.readline()
+
+for diffLine in Line:
+    print(diffLine.rstrip())
+
+EXERCISE 2
+
+msg =  "Johnny Son's name in the file occured: "
+Filename = "sentence.txt"
+
+with open (Filename, 'r') as file_handler:
+    for count, Line in enumerate(file_handler):
+        pass
+    print('Total lines', count + 1)
+    for Line in file_handler:
+        if(Line==msg):
+            count=count+1
+            print(msg,":", count, "Times!")
+            
+
+EXERCISE 3
+
+i = open ("numers.txt", "r")
+print(i.readline())
+
+EXERCISE 5
+
+import string 
+
+File = open("sentence.txt", "r")
+text = file.read()
+countLetter = {}
+for Letters in text:
+    if Letters in string.ascii_letters:
+        if Letters in countLetter:
+            countLetter[Letters] +=1
+        else:
+            countLetter[Letters] =1
+
+for Letters, countLetter in countLetter.items():
+    print(f'{Letters}: {countLetter}')
