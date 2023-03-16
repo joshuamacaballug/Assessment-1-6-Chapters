@@ -1,0 +1,75 @@
+EXERCISE 1 
+
+#Asking the user to enter 5 numbers in
+num1 = (input("Enter 1st number: "))
+num2 = (input("Enter 2nd number: "))
+num3 = (input("Enter 3rd number: "))
+num4 = (input("Enter 4th number: "))
+num5 = (input("Enter 5th number "))
+
+
+list = [num1, num2, num3, num4, num5]
+#This the list where the inputted numbers from the user goes to.
+
+
+print("These are the five digits you have entered: ", list)
+#Displays the message and list
+
+EXERCISE 2
+
+
+diglist = [15, 27, 67, 36, 26, 97, 69, 41, 18, 55]
+for x in diglist:
+    print(x)
+
+
+maxval = max(diglist)
+minval = min(diglist)
+print(minval, maxval)
+
+diglist.sort()
+
+print(diglist)
+
+
+diglist.sort(reverse = True)
+print(diglist) 
+
+
+diglist2 = [17, 42]
+diglist.append(diglist2)
+
+print(diglist)
+
+EXERCISE 3
+
+Dict = {"Movie Title:": "Back to the Future", "Director:": "Robert Zemeckis", "Release date:": "July 3, 1985", "Box office:": "388.8 Million USD"}
+
+for k, v in Dict.items():
+    print(k, v)
+
+EXERCISE 4
+
+year = (2017,2003,2011,2005,1987,2009,2020,2018,2009)
+
+
+print(year[1])
+
+
+year1 = (2009, 2018, 2020, 2009, 1987, 2005, 2011, 2003, 2017)
+rev = reversed(year1)
+print(tuple(rev))
+print(year1)
+
+
+amount = year.count(2009)
+
+
+print(amount)
+
+
+print(year.index(2018))
+
+
+print(len(year))
+
