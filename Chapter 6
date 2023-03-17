@@ -1,0 +1,36 @@
+EXERCISE 1
+
+import math
+
+a = 2.3 #Ceiling and floor measurements\
+a1 = 5 #factorial
+A2 = 16 #SR
+ceiling = math.ceil(a)
+floor= math.floor(a)
+fact= math.pow(2,3)
+sqr_root=math.sqrt(16)
+print(ceiling, floor, fact, sqr_root)
+
+EXERCISE 2
+
+list =  [32,423,543,34,132,53,12,54,67]
+
+for i, num in enumerate(list):
+    if num % 2 == 0: 
+        indicesEven.append()
+
+
+print(indicesEven)
+sort = sorted(a)
+print(sort)
+
+
+sliceA = a [3:1]
+print(sliceA)
+sliceB= a [:4]
+
+sliceC =a[-5 : -2: -1]
+print(sliceC)
+
+EXERCISE 3
+
