@@ -34,3 +34,65 @@ print(sliceC)
 
 EXERCISE 3
 
+import operator
+def calc():
+    print("[Calculator]\n"
+    "Choose 1 out of 6 to start\n"
+    "1. Addition\n"
+    "2. Subtraction\n"
+    "3. Multiplication\n"
+    "4. Division\n"
+    "5. Modulus\n"
+    "6. Check for the greater number\n"
+    "If you want to quit, type [quit] or press [Q].")
+
+while True: 
+    try:
+        decision = input("Please input your choice: ")
+        if decision == "Q" or decision == "quit" or decision == "Quit":
+            print("Exiting..")
+            break
+
+    decision = int(decision)
+    N1=int(input("Enter first digit: "))
+    N2=int(input("Enter second digit: "))
+
+    if decision == 1: 
+        outcome=operator.add(N1,N2)
+    elif decision == 2:
+        outcome=operator.sub(N1,N2)
+    elif operator == 3:
+        outcome==operator.mul(N1,N2)
+    elif operator == 4:
+        outcome == operator.truediv(N1,N2)
+    elif operator == 5:
+        outcome == operator.mod(N1,N2)
+    elif decision == 6:
+        outcome == N1 if N1 > N2 else N2
+
+        print("Output: ", outcome)
+except ValueError:
+print("Input Invalid!")
+
+calc()
+
+EXERCISE 4
+
+import matplotlib.pyplot as plt
+
+D = {"Game": [234, 435], "Commercials": [23,123], "Fast & Furious": [213,567],}
+
+feg,ed=plt.subplot()
+
+a=list(Data.keys())
+b=[d[0] for d in Data.values()]
+c=[d[1] for d in Data.values()]
+
+ed.bar(a, b, color="b")
+ed.bar(a,b,color="g",bottom=b)
+
+ed.set_ylabel("Respodants count")
+ed.set_title("Watch John Wick")
+ed.legend(["Male", "Shemale"])
+
+plt.show()
